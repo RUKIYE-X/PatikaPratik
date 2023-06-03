@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 
     static boolean isPalindrom(String str) {
@@ -22,8 +23,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrom("kayakçı"));
-        System.out.println(isPalindrom2("abba"));
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Bir string ifade giriniz: ");
+        String input = scan.nextLine();
+
+        System.out.println(isPalindrom(input));
+        System.out.println(isPalindrom2(input));
 
     }
 }
